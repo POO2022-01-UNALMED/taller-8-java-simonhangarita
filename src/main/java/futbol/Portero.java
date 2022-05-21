@@ -7,8 +7,7 @@ public class Portero extends Futbolista{
     this.golesRecibidos=golesMarcados;
     this.dorsal=dorsal;
   }
-  @Override
-  public int compareTo(Futbolista p){
+  public int compareTo(Object p){
     if(golesRecibidos==((Portero)p).golesRecibidos){
       return 0;
     }

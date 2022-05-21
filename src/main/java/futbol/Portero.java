@@ -9,7 +9,7 @@ public class Portero extends Futbolista{
   }
  
   public int compareTo(Futbolista p){
-    if(golesRecibidos==((Portero)p).golesRecibidos{
+    if(golesRecibidos==((Portero)p).golesRecibidos){
       return 0;
     }
     else if(golesRecibidos<((Portero)p).golesRecibidos){

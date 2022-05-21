@@ -12,16 +12,15 @@ public class Jugador extends Futbolista{
     this.golesMarcados=289;
     this.dorsal=7;
   }
-  @Override
-  public int compareTo(Futbolista f){
-    if(this.getEdad()==f.getEdad()){
+  public int compareTo(Object f){
+    if(this.getEdad()==((Futbolista)f).getEdad()){
       return 0;
     }
-    else if(this.getEdad()<f.getEdad()){
-      return f.getEdad()-this.getEdad();
+    else if(this.getEdad()<((Futbolista)f).getEdad()){
+      return ((Futbolista)f).getEdad()-this.getEdad();
     }
     else{
-      return this.getEdad()-f.getEdad();
+      return this.getEdad()-((Futbolista)f).getEdad();
     }
   }
   public boolean jugarConLasManos(){

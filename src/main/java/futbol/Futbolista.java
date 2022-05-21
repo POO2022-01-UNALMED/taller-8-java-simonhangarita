@@ -30,23 +30,8 @@ public abstract class Futbolista implements Comparable{
     return "El futbolista "+nombre+" tiene "+edad+", y juega de "+posicion;
   }
   public boolean equals(Futbolista f){
-    if(this.getEdad()==f.getEdad()){
-      if (this.getNombre().equals(f.getNombre())&& this.getPosicion().equals(f.getPosicion())){
-        if (f instanceof Jugador){
-          if(((Jugador)this).golesMarcados==((Jugador)f).golesMarcados &&((Jugador)this).dorsal==((Jugador)f).dorsal){
-            return true;
-          } 
-          else{return false;}
-        }
-        else if(f instanceof Portero){
-          if(((Portero)this).golesRecibidos==((Portero)f).golesRecibidos &&((Jugador)this).dorsal==((Jugador)f).dorsal){
-            return true;
-          }
-          else{return false;}
-        }
-        return true;
-      }
-      return false;
+    if(this==f){
+      return true;
     }
     return false;
   }

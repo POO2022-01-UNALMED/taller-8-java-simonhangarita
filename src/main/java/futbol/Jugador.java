@@ -1,7 +1,7 @@
 package futbol;
 public class Jugador extends Futbolista{
-  private short golesMarcados;
-  private byte dorsal;
+  public short golesMarcados;
+  public byte dorsal;
   public Jugador(String nombre,int edad,String posicion, short golesMarcados,byte dorsal){
     super(nombre,edad,posicion);
     this.golesMarcados=golesMarcados;
@@ -11,18 +11,6 @@ public class Jugador extends Futbolista{
     super();
     this.golesMarcados=289;
     this.dorsal=7;
-  }
-  public Short getGolesMarcados(){
-    return golesMarcados;
-  }
-  public byte getDorsal(){
-    return dorsal;
-  }
-  public void setGolesMarcados(short goles){
-    this.golesMarcados=goles;
-  }
-  public void setDorsal(byte dorsal){
-    this.dorsal=dorsal;
   }
   public int compareTo(Futbolista f){
     if(this.getEdad()==f.getEdad()){

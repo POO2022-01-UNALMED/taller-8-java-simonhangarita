@@ -1,33 +1,22 @@
 package futbol;
 public class Portero extends Futbolista{
-  private short golesRecibidos;
-  private byte dorsal;
+  public short golesRecibidos;
+  public byte dorsal;
   public Portero(String nombre,int edad, short golesMarcados,byte dorsal){
     super(nombre,edad,"Portero");
     this.golesRecibidos=golesMarcados;
     this.dorsal=dorsal;
   }
-  public Short getGolesRecibidos(){
-    return golesRecibidos;
-  }
-  public byte getDorsal(){
-    return dorsal;
-  }
-  public void setGolesRecibidos(short golesRecibidos){
-    this.golesRecibidos=golesRecibidos;
-  }
-  public void setDorsal(byte dorsal){
-    this.dorsal=dorsal;
-  }
+ 
   public int compareTo(Futbolista p){
-    if(golesRecibidos==((Portero)p).getGolesRecibidos()){
+    if(golesRecibidos==((Portero)p).golesRecibidos{
       return 0;
     }
-    else if(golesRecibidos<((Portero)p).getGolesRecibidos()){
-      return ((Portero)p).getGolesRecibidos()-this.getGolesRecibidos();
+    else if(golesRecibidos<((Portero)p).golesRecibidos){
+      return ((Portero)p).golesRecibidos-this.golesRecibidos;
     }
     else{
-      return this.getGolesRecibidos()-((Portero)p).getGolesRecibidos();
+      return this.golesRecibidos-((Portero)p).golesRecibidos;
     }
   }
   public boolean jugarConLasManos(){
